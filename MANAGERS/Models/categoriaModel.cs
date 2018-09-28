@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MANAGERS.Models
+namespace NORTHWND.Models
 {
-    class categoriaModel
+    public class categoriaModel
     {
+        public int CategoryID { get; set; }
+        public string CategoryName { get; set; }
+        public string Description { get; set; }
+        public byte[] Picture { get; set; }
     }
 }

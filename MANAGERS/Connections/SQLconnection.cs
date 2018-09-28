@@ -4,16 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MANAGERS.Connections
+namespace NORTHWND.Connections
 {
     class SQLconnection
     {
-        private SQLconnection connection;
-        SQLconnection() {
-            connection = new SQLconnection().connection("INTEGRATED SECURITY = SSPI; INITIAL CATALOG=NORTHWND; DATA SOURCE = .;");
-        }
-        public static string returnSQLConnection() {
-            return "";
+        public static string ConnectionString() {
+            return "DATA SOURCE = .; INITIAL CATALOG=NET; INTEGRATED SECURITY = SSPI; ";
         }
 
     }
